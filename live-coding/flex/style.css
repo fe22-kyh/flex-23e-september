@@ -1,0 +1,49 @@
+html, body {
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.flex-item {
+  flex: 1 1 10%;
+}
+
+.flex-item:last-child {
+  flex: 1 1 25%; /* growth shrink basis */
+  background-color: blue;
+}
+
+
+.flex-item {
+  background-color: navy;
+  color: white;
+
+  text-align: center;
+  line-height: 196px;
+  font-size: 1.2em;
+}
+
+.page-header {
+  font-size: 2em;
+  display: flex;
+  justify-content: space-between; /* */
+
+  background-color: #d6d6d6;
+  line-height: 2em;
+}
+
+.page-navigation {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: .7em;
+}
+
+.page-navigation li {
+  margin-right: 1.5em;
+  /*white-space: nowrap;*/
+}
+

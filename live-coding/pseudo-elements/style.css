@@ -1,0 +1,23 @@
+.text-block {
+  width: 60%;
+  margin: 5em auto;
+}
+
+.github-ref {
+  position: relative;
+}
+
+.github-ref::after {
+  content: "";
+  background-image: url("https://cdn-icons-png.flaticon.com/512/5968/5968866.png");
+  background-size: cover;
+  position: absolute;
+
+  width: 1em;
+  height: 1em;
+}
+
+.text-block:has(#color-field-red:checked):hover{
+  height: 60px;
+  width: 60px;
+}

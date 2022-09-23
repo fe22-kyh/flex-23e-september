@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section class="form-container">
+      <header class="form-header">
+        <h1>Cool club</h1>
+      </header>
+
+      <form>
+        <section class="form-section"">
+          <h3>User details</h3>
+          <select class="form-dropdown"">
+            <option hidden disabled selected>Title</option>
+            <option>Herr</option>
+            <option>Fru</option>
+            <option>Mr.</option>
+            <option>Mrs.</option>
+            <option>Other</option>
+          </select>
+
+          <div class="form-input-group">
+            <input class="form-field__left" type="text" placeholder="First name" />
+            <input class="form-field__right" type="text" placeholder="Last name" />
+          </div>
+        </section>
+
+        <section class="form-section">
+          <h3>Contact details</h3>
+          <input class="form-field" type="text" placeholder="E-mail" />
+          <input class="form-field" type="text" placeholder="Phone" />
+        </section>
+
+        <section class="form-section">
+          <h3>Password</h3>
+          <input class="form-field" type="password" placeholder="Password" />
+          <input class="form-field" type="password" placeholder="Repeat password" />
+        </section>
+
+
+        <div class="form-buttons">
+          <button class="form-submit-btn" type="submit">Sign Up!</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

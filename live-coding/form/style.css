@@ -1,0 +1,129 @@
+html, body {
+  background-color: #d6d6d6;
+  font-size: 10px;
+}
+
+.form-container {
+  width: 60%;
+  margin: 5em auto; /* top-bottom right-left */
+
+  padding: 4em;
+  background-color: #fff;
+
+  border-radius: .5em;
+  box-shadow: .2em .2em .8em blueviolet;
+
+  overflow: hidden;
+}
+
+.form-header {
+  color: #fff;
+  font-size: 2.6rem;
+  font-weight: bold;
+  padding: 1em 0;
+
+  position: relative;
+
+  z-index: 1;
+}
+
+.form-header::after {
+  content: "";
+  position: absolute;
+  height: calc(100% + 2em + 2px);
+  width: calc(100% + 4em);
+  top: -2em;
+  left: -2em;
+
+  z-index: -1;
+
+  background-image: linear-gradient(to right, blue, blueviolet);
+}
+
+.form-section {
+  border-top: 2px solid blue;
+  padding: 2em 0;
+}
+
+.form-field,
+.form-input-group,
+.form-dropdown {
+  margin: 1em 0;
+}
+
+.form-field,
+.form-field__left,
+.form-field__right {
+  font-size: 1.8rem;
+  padding: .4em;
+}
+
+.form-section h3::before {
+  content: "* ";
+}
+
+.form-field {
+  width: 60%;
+}
+
+.form-input-group,
+.form-buttons {
+  height: 4em;
+  position: relative;
+}
+
+.form-field__left,
+.form-field__right {
+  position: absolute;
+  width: 45%;
+}
+
+.form-field__right {
+  right: 0;
+}
+
+.form-submit-btn {
+  /* Föräldern (.form-buttons) sätter absolut kontext om den är relativ */
+  position: absolute; 
+  right: 0;
+  padding: 1em 2em; /* top-bottom right-left */
+
+  background-color: blueviolet;
+  color: #fff;
+  
+  border: none;
+  border-radius: .3em;
+
+  z-index: 1;
+}
+
+.form-submit-btn::after {
+  content: '';
+  position: absolute;
+  height: 140%;
+  width: 140%;
+
+  top: -20%;
+  left: -20%;
+
+  z-index: -1;
+
+  border-radius: 50%;
+  transition: 2s all;
+  opacity: 0;
+}
+
+.form-field:focus {
+  border-color: limegreen;
+}
+
+.form-submit-btn:hover::after {
+  opacity: 1;
+  background-color: blue;
+  box-shadow: 0 0 4em blueviolet;
+}
+
+.form-section h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}

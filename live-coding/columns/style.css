@@ -1,0 +1,29 @@
+* { /* Simplified meyer reset */
+  padding: 0;
+  margin: 0;
+}
+
+/*main, aside
+.container > * {
+  border: 1px solid black;
+  padding: 1em;
+  margin: 1em;
+}  debugging */
+
+.container {
+  width: 90%;
+  margin: 5em auto;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.main-text {
+  flex: 1 1 70%; /* grow shrink basis */
+  margin-right: 10%;
+}
+
+.side-text {
+  flex: 1 1 30%; /* grow shrink basis */
+}
+

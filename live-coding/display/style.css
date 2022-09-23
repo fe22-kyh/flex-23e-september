@@ -1,0 +1,20 @@
+
+
+.text-container {
+  position: relative;
+  border: 1px solid black;
+  
+  width: 80%;
+  margin: auto auto; 
+}
+
+.text-block {
+  position: absolute;
+  display: inline-block;
+  width: 30%;
+}
+
+.side-column {
+  background-color: #d6d6d6;
+  right: 0;
+}
